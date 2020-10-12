@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+.main_banner{
+    height: 100vh;
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+}
+
+.main_plate{
+    padding-top: 350px;
+
+
+}
