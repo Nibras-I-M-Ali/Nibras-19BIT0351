@@ -53,16 +53,20 @@ body{
 
 .main_plate{
     padding-top: 250px;
+}
+
+.typing{
     position: relative;
 }
 
-.main_plate::after{
+.typing::after{
     content: '';
     position: absolute;
-    border-right: 5px solid  rgb(30, 233, 57);
-    height: 7%;
-    width: 1px;
-    animation: blink 0.5s infinte easy;    
+    border-right: 5px solid rgb(30, 233, 57);
+    height: 90%;
+    right: -7px;
+    width: 2px;
+    animation: blink 0.5s infinite ease;    
 }
 
 @keyframes blink{
