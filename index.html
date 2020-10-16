@@ -23,7 +23,7 @@
             </ul>
         </div>
         
-        <section class="main_banner">
+        <section class="main_banner" id="home">
              <div class="main_plate">
 
             <span class="typing"></span> 
@@ -37,7 +37,7 @@
         </section>
         
         
-        <section class="interests">
+        <section class="interests" id="interests">
             <h1>My Interests</h1>
             <div class="container">
             <div class="row">
@@ -91,23 +91,30 @@
             </div>  
         </section>
 
-        
-        <section class="projects">
-            <ul>
-                <li>Image gallery</li>
-                <li>Rental property management system</li>
-                <li>Feed the hungry</li>
-                <li>Quiz app</li>
-            </ul>
-        </section>
 
-         <section class="contact">
-             <ul>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <button>Get in touch</button>
-             </ul>
+         <section class="contact" id="contact">
+             <h1>Contact</h1>
+             <div class="container_1">
+                <div class="row_1">
+                  <div class="column_1">
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+              </div>
             </section>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
