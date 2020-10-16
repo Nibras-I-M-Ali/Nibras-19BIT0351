@@ -1,8 +1,9 @@
-console.log("Hello");
-const texts = ["Hello world!", "Nibras here"];
+const texts = ["Hello world! Nibras here"];
+const texts1 = [""]
 let count = 0;
 let index = 0;
 let currentText = "";
+
 
 
 (function type()
