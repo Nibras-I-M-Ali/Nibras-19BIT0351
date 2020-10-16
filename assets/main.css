@@ -1,19 +1,76 @@
 body{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .main_banner{
-    height: 100vh;
-    background-image: url("images/banner.jpg");
-    background-size: cover;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/banner-1.jpg");
     text-align: center;
     font-weight: bold;
-    font-size: 2rem;
-    color: white;
+    /* font-size: 2rem; */
+    color: rgb(30, 233, 57);
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
     position: relative;
+    font-family: 'Roboto Mono';
+}
+
+
+
+
+/* .intrests{
+    height: 50vh;
+} */
+
+.main_banner::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -50% ;
+    width: 100%;
+    height: 100%;
+    background:  rgb(17, 16, 16);
+    transform-origin: right;
+    transform: skewY(10deg);
+}
+
+
+.main_banner::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: -50% ;
+    width: 100%;
+    height: 100%;
+    background: rgb(17, 16, 16);
+    transform-origin: left;
+    transform: skewY(-10deg);
+    
 }
 
 .main_plate{
-    padding-top: 350px;
+    padding-top: 250px;
+    position: relative;
+}
 
+.main_plate::after{
+    content: '';
+    position: absolute;
+    border-right: 5px solid  rgb(30, 233, 57);
+    height: 7%;
+    width: 1px;
+    animation: blink 0.5s infinte easy;    
+}
 
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
